@@ -1,0 +1,81 @@
+@use '../../styles/mixins' as *;
+
+.career-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+  word-break: keep-all;
+
+  .body {
+    width: 100%;
+    padding: 0 10px;
+
+    .career-item {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: 5px;
+      padding: 12px 0;
+      border-left: 2px solid #bdbdbd;
+      font-size: 18px;
+      font-weight: 400;
+
+      &:first-child {
+        padding-top: 7px;
+      }
+
+      &:last-child {
+        padding-bottom: 7px;
+      }
+
+      &::before {
+        position: relative;
+        left: -1px;
+        content: '';
+        align-self: center;
+        width: 10px;
+        height: 10px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+        transform: translatex(-50%);
+        border: 2px solid #828282;
+        flex-shrink: 0;
+      }
+
+      .date {
+        margin-left: 5px;
+        margin-right: 10px;
+        width: 150px;
+        min-width: 150px;
+        color: #828282;
+        align-self: center;
+        font-size: 15px;
+
+        @include md {
+          width: 220px;
+          min-width: 220px;
+          font-size: 16px;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-weight: 600;
+          color: var(--primary-text-color);
+        }
+
+        .description {
+          margin-top: 4px;
+          font-size: 15px;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
