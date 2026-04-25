@@ -1,17 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-function PageFooter({ author, githubUrl }) {
+function PageFooter() {
   return (
     <footer className="page-footer-wrapper">
       <p className="page-footer">
-        © {new Date().getFullYear()}
-        &nbsp;
-        <a href={githubUrl}>{author}</a>
-        &nbsp;powered by
-        <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
-          &nbsp;zoomkoding-gatsby-blog
-        </a>
+        Powered by&nbsp;
+        <a className="lian-link" href="https://github.com/lian-rla">Lian</a>
       </p>
     </footer>
   );

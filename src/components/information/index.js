@@ -14,8 +14,8 @@ function Information({ author }) {
       <div className="information-text">
         <div className="information-name">{name}</div>
         <div className="information-hanja">
-          <span>珉 <b>민</b>옥돌 <b>민</b></span>
-          <span>材 <b>재</b>재목 <b>재</b></span>
+          <span><b>珉</b> 옥돌 <b>민</b></span>
+          <span><b>材</b> 재목 <b>재</b></span>
         </div>
       </div>
     </div>
