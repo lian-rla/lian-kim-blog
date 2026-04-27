@@ -12,7 +12,7 @@ function Information({ author }) {
         <Image style={{ width: 180, height: 180, borderRadius: '50%' }} src={bio.thumbnail} alt="profile" />
       </div>
       <div className="information-text">
-        <div className="information-name">{name}</div>
+        <div className="information-name">Minjae Kim(Lian)</div>
         <div className="information-hanja">
           <span><b>珉</b> 옥돌 <b>민</b></span>
           <span><b>材</b> 재목 <b>재</b></span>
