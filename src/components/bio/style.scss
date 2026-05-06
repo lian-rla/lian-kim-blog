@@ -43,6 +43,15 @@
       font-weight: 600;
     }
 
+    .social-links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
     &.korean {
       font-weight: 100;
       font-size: 32px;
@@ -102,9 +111,52 @@
 
   .thumbnail-wrapper {
     display: none;
+    position: relative;
 
     @include md {
       display: block;
+      transform: translateY(-60px);
+    }
+
+    .thumbnail-links {
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .thumbnail-link {
+      position: relative;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary-text-color);
+      text-decoration: none;
+      opacity: 0.8;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-text-color);
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 }

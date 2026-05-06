@@ -3,12 +3,10 @@
 .information {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   padding: 40px 0;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--divider-color, #e0e0e0);
-  gap: 24px;
 
   .information-meta {
     display: flex;
@@ -35,21 +33,17 @@
 
   .information-profile {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 40px;
     width: 100%;
-
-    @include md {
-      justify-content: flex-start;
-    }
   }
 
   .information-image {
     flex-shrink: 0;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    width: 240px;
+    height: 300px;
     overflow: hidden;
   }
 
@@ -57,6 +51,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
 
     .information-name {
       font-size: 28px;
@@ -83,11 +78,6 @@
   }
 
   @include md {
-    align-items: flex-start;
     padding: 40px 0;
-
-    .information-meta {
-      max-width: 100%;
-    }
   }
 }

@@ -20,12 +20,14 @@ module.exports = {
       bachelorDegree: 'Gachon Univ. Medical Engineering (2021.03-2026.02)',
       role: '개발자',
       description: ['Backend', 'Pytorch', 'AI', 'Python'],
-      thumbnail: 'sample.png',
+      thumbnail: 'profile.png',
     },
     social: {
       github: `https://github.com/lian-rla`,
       linkedIn: ``,
       email: `minjae260314@gmail.com`,
+      resume: `https://www.figma.com/design/5fuoP9p9HZIBWCrA6NGeIq/%EA%B9%80%EB%AF%BC%EC%9E%AC-%EC%9D%B4%EB%A0%A5%EC%84%9C?node-id=0-1&m=dev&t=VgdP8clnbJAOEdzW-1`,
+      legacyBlog: `https://blog.naver.com/lian_rla`,
     },
     dropdown: {
       naver: 'https://blog.naver.com/lian_rla',

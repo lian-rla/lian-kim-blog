@@ -43,7 +43,8 @@ export const pageQuery = graphql`
           frontmatter {
             categories
             title
-            date(formatString: "MMMM DD, YYYY")
+            emoji
+            date(formatString: "YYYY.MM.DD")
           }
           fields {
             slug
@@ -66,6 +67,8 @@ export const pageQuery = graphql`
             github
             linkedIn
             email
+            resume
+            legacyBlog
           }
         }
       }
